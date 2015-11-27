@@ -13,9 +13,9 @@ use yii\base\Behavior;
 class Mainten extends Behavior
 {
     public $owner;
-    //允许访问的ip
+    //鍏佽璁块棶鐨刬p
     public $allowIps;
-    //默认Route
+    //榛樿Route
     public $offlinRoute = null;
 
     public function events(){
