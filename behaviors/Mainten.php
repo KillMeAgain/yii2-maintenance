@@ -20,7 +20,7 @@ class Mainten extends Behavior
 
     public function events(){
         return [
-            Application::EVENT_BEFORE_ACTION   => 'beforeRequest'
+            Application::EVENT_BEFORE_REQUEST   => 'beforeRequest'
         ];
     }
 

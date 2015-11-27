@@ -5,22 +5,24 @@ Yii2 维护模式
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
-
-Either run
-
+Download the latest release from here [releases](https://github.com/KillMeAgain/yii2-maintenance/releases), then extract it to your project.
+In your application config, add the path alias for this extension.
+```php
+return [
+    ...
+    'aliases' => [
+        '@bigm/log' => 'path/to/your/extracted',
+        // for example: '@bigm/log' => '@app/vendor/yiisoft/yii2-log',
+        ...
+    ]
+    ...
+    'as maintenance' => [
+        'class' => 'bigm\mainten\behaviors\Mainten',
+        ...
+    ],
+    ...
+];
 ```
-php composer.phar require --prefer-dist vendor/yii2-maintenance "*"
-```
-
-or add
-
-```
-"vendor/yii2-maintenance": "*"
-```
-
-to the require section of your `composer.json` file.
-
 
 Usage
 -----
@@ -28,4 +30,6 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \bigm\mainten\AutoloadExample::widget(); ?>```
+<?= 
+
+```
