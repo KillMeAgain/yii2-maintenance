@@ -1,0 +1,21 @@
+{
+    "name": "vendor/yii2-maintenance",
+    "description": "Yii2 维护模式",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","maintenance mode"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BigMao",
+            "email": "youjingqiang@vip.qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "bigm\\mainten\\": ""
+        }
+    }
+}
